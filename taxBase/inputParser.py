@@ -18,13 +18,9 @@ import string
 import re
 import datetime
 from decimal import Decimal
-from base import Status, TAX_YEAR
+from taxbase.Taxpayer import Status, TAX_YEAR
 
-log.basicConfig(stream=sys.stdout, level=log.INFO)
-
-class InputError(Exception):
-    pass
-    
+log.basicConfig(stream=sys.stdout, level=log.INFO)    
     
 def parse_input(inputfile):
     """
